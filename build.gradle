@@ -1,0 +1,41 @@
+group 'ynpan'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.8.RELEASE")
+        classpath('org.junit.platform:junit-platform-gradle-plugin:1.0.0')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'org.junit.platform.gradle.plugin'
+
+jar {
+    baseName = 'gs-rest-service'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.0.0")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.0.0")
+    testCompile("org.junit.jupiter:junit-jupiter-params:5.0.0")
+    testCompile('org.junit.platform:junit-platform-launcher:1.0.0')
+    testCompile('org.junit.platform:junit-platform-runner:1.0.0')
+    testCompile('com.github.sbrannen:spring-test-junit5:1.0.0')
+}
