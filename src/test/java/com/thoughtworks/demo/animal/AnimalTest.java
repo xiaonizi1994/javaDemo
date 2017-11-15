@@ -26,14 +26,14 @@ public class AnimalTest {
     }
 
     @Test
-    void should_return_wolf_eat() {
+    void should_println_wolf_eat() {
         Wolf wolf=new Wolf();
         wolf.eat();
         assertEquals("wolf eat\n", outContent.toString());
     }
 
     @Test
-    void should_return_canine_roam() {
+    void should_println_canine_roam() {
         Animal wolf=new Wolf();
         wolf.roam();
         assertEquals("canine roam\n", outContent.toString());
