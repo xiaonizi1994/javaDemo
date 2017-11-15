@@ -41,10 +41,25 @@ public class AnimalTest {
 
 
     @Test
-    void should_return_animal_sleep() {
+    void should_println_animal_sleep() {
         Wolf wolf=new Wolf();
         wolf.sleep();
         assertEquals("sleep\n", outContent.toString());
     }
 
+    @Test
+    void should_println_wolf_make_noise() {
+        Wolf wolf=new Wolf();
+        PetOwner petOwner=new PetOwner();
+        petOwner.giveShot(wolf);
+        assertEquals("ao\n",outContent.toString());
+    }
+
+    @Test
+    void should_println_animal_make_noise() {
+        Animal animal=new Animal();
+        PetOwner petOwner=new PetOwner();
+        petOwner.giveShot(animal);
+        assertEquals("noise\n",outContent.toString());
+    }
 }

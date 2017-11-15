@@ -14,4 +14,7 @@ public class Animal {
     public void roam(){
         System.out.println("roam");
     }
+    public void makeNoise(){
+        System.out.println("noise");
+    }
 }
