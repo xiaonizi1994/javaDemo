@@ -1,6 +1,6 @@
 package com.thoughtworks.demo.animal;
 
-public class Wolf extends Canine{
+public class Wolf extends Canine {
     public void eat(){
         System.out.println("wolf eat");
     }
@@ -8,4 +8,6 @@ public class Wolf extends Canine{
     public void makeNoise(){
         System.out.println("ao");
     }
+
+    public void bite(){System.out.println("bite");}
 }

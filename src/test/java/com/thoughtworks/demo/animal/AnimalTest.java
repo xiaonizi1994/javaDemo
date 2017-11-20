@@ -62,4 +62,19 @@ public class AnimalTest {
         petOwner.giveShot(animal);
         assertEquals("noise\n",outContent.toString());
     }
+
+    @Test
+    void should_call_wolf_method_while_type_change() {
+        Animal animal=new Wolf();
+        ((Wolf) animal).bite();
+        assertEquals("bite\n",outContent.toString());
+    }
+
+    @Test
+    void should_call_pet_method_while_the_param_is_pet() {
+        PetOwner petOwner=new PetOwner();
+        Cat cat=new Cat();
+        petOwner.giveTouch(cat);
+        assertEquals("miao\n",outContent.toString());
+    }
 }
