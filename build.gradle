@@ -38,4 +38,6 @@ dependencies {
     testCompile('org.junit.platform:junit-platform-launcher:1.0.0')
     testCompile('org.junit.platform:junit-platform-runner:1.0.0')
     testCompile('com.github.sbrannen:spring-test-junit5:1.0.0')
+
+    compile group: 'org.projectlombok', name: 'lombok-maven-plugin', version: '1.16.10.0'
 }

@@ -1,5 +1,8 @@
 package com.thoughtworks.demo.animal;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class Wolf extends Canine {
     public void eat(){
         System.out.println("wolf eat");

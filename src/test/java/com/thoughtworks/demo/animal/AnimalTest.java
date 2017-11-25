@@ -77,4 +77,9 @@ public class AnimalTest {
         petOwner.giveTouch(cat);
         assertEquals("miao\n",outContent.toString());
     }
+
+    @Test
+    void name() {
+        Cat cat=new Cat();
+    }
 }
