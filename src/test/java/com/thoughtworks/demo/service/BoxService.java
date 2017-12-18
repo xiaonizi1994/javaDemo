@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class BoxService extends BaseTest{
     @Test
     void name() {
-
         assertThrows(NullPointerException.class,()->Box.main());
     }
 }
